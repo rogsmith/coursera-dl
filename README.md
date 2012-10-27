@@ -4,6 +4,7 @@ I will add ability to download materials if need be.
     ruby coursera-dl.rb <username> <password> <course-name>
 
 If the course is in preview add true as the last parameter:
+
     ruby coursera-dl.rb <username> <password> <course-name> true
 
 
