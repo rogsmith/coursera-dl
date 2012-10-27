@@ -42,7 +42,13 @@ def parse_lectures(page)
       end
     end
   end
-  download_lectures(lectures)
+  if lectures.size == 0
+    puts "We did not find any lectures. Perhaps this class is in preview mode.  Try this command:"
+    puts ""
+    puts "ruby coursera-dl.rb <username> <password> <course> true"
+  else
+    download_lectures(lectures)
+  end
 end
 
 def grab_hidden_video_url(uri)
